@@ -10,7 +10,7 @@ import styles from '../SharePointOnlineQuickAssist.module.scss';
 export default class UserProfilePhotoQA extends React.Component<ISharePointOnlineQuickAssistProps>
 {
     public state = {
-        affectedUser: "",
+        affectedUser: this.props.currentUser.loginName,
         aadUserPhotoUrl:"",
         uapUserPhotoUrl:""        
       };

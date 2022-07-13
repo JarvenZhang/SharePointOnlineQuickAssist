@@ -14,7 +14,7 @@ import * as strings from 'SharePointOnlineQuickAssistWebPartStrings';
 export default class UserProfileTitleQA extends React.Component<ISharePointOnlineQuickAssistProps>
 {
     public state = {
-        affectedUser: "",
+        affectedUser: this.props.currentUser.loginName,
         aadJobTitle:"",
         uapJobtitle:"",
         siteJobTitle:"",

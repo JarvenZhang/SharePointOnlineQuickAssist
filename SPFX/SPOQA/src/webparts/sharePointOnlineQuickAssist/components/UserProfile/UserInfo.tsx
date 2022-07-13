@@ -15,12 +15,13 @@ import * as strings from 'SharePointOnlineQuickAssistWebPartStrings';
 export default class UserInfoQA extends React.Component<ISharePointOnlineQuickAssistProps>
 {
   public state = {
-    email: "",
+    email: this.props.currentUser.loginName,
     isGroup:false,
     isNeedFix:false,
     isChecked:false,
     userId:-1,
-    affectedSite:this.props.webAbsoluteUrl    
+    affectedSite:this.props.webAbsoluteUrl,
+        
   };
   private resRef= React.createRef<HTMLDivElement>();  
   private groupInfo1=null;
